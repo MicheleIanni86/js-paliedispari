@@ -8,6 +8,16 @@ Creare una funzione per capire se la parola inserita è palindroma
 ```
 ## Svolgimento
 
+* Chiedo all'utente con un prompt la parola da inserire
+* porto la parola in una funzione
+* analizzo se la parola viene letta ugualmente anche al * contrario
+
+SE viene letta ugualmente anche al contrario
+ - stampo 'La parola scelta è Palindroma'
+
+ALTRIMENTI
+- stampo 'La parola scelta non è Palindroma' 
+
 
 
 
