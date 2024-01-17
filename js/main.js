@@ -1,21 +1,32 @@
-// ## Traccia
-// Chiedere all'utente di inserire una parola
-// Creare una funzione per capire se la parola inserita è palindroma
-
-
-// ## Svolgimento
+// ESERCIZIO PAROLA PALINDROMA
 
 // * Chiedo all'utente con un prompt la parola da inserire
 const userWord = prompt('Inserisci una Parola');
 
-const palindromeWord = palindromeControl();
-console.log(palindromeWord);
+
+// HTML Var
+const resultokElement = document.getElementById('resultok');
+const resultkoElement = document.getElementById('resultko');
+const resultContainerOkElement = document.getElementById('containerResultOk');
+const resultContainerKoElement = document.getElementById('containerResultKo');
 
 // * Porto la parola in una funzione
-// * Analizzo se la parola viene letta ugualmente anche al contrario
+const result = palindromeControl(userWord);
+console.log(result);
 
-// SE viene letta ugualmente anche al contrario
-//  - Stampo 'La parola scelta è Palindroma'
 
-// ALTRIMENTI
-// - Stampo 'La parola scelta non è Palindroma' 
+// condizione
+if (result == true) {
+    resultokElement.innerHTML = ('LA PAROLA E\' PALINDROMA');
+    resultokElement.classList.remove('d-none');
+    resultContainerOkElement.classList.remove('d-none');
+} else {
+    resultkoElement.innerHTML = ('LA PAROLA NON E\' PALINDROMA');
+    resultkoElement.classList.remove('d-none');
+    resultContainerKoElement.classList.remove('d-none');
+
+}
+
+
+
+// --------------------------------------------
