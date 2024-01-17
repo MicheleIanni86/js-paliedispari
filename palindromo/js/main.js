@@ -17,11 +17,11 @@ console.log(result);
 
 // condizione
 if (result == true) {
-    resultokElement.innerHTML = ('LA PAROLA E\' PALINDROMA');
+    resultokElement.innerHTML = (`${userWord}: LA PAROLA E' PALINDROMA`);
     resultokElement.classList.remove('d-none');
     resultContainerOkElement.classList.remove('d-none');
 } else {
-    resultkoElement.innerHTML = ('LA PAROLA NON E\' PALINDROMA');
+    resultkoElement.innerHTML = (`${userWord}: LA PAROLA NON E' PALINDROMA`);
     resultkoElement.classList.remove('d-none');
     resultContainerKoElement.classList.remove('d-none');
 
